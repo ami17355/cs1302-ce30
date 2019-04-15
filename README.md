@@ -199,10 +199,12 @@ that support performance metrics for comparisons and swaps.
 
 **CHECKPOINT**
 
-Now for some better analytics!
+Now for some better analytics! It turns out that hip young people like our product for some reason.
+Your boss want to cash in on that opportunity by having you finding users with a maximal social score
+based on a formula provided by the company's data scientists. Let's do this!
 
 1. **EVERYONE:** Consider a scenario where you need to sort the `users` array by user
-   *social score* using each of the four algorithms available in the `cs1302.sorting` package.
+   *social score* from *high to low* using each of the four algorithms available in the `cs1302.sorting` package.
    A user's social score is defined as their friends count times the number of characters
    in their name (including spaces) divided by their age. Here is some pseudocode:
 
@@ -214,7 +216,7 @@ Now for some better analytics!
    fastest according to: i) comparisons; and ii) swaps.
 
 1. **NEXT GROUP MEMBER:** Now, write the code in `main` to sort the `users` array by user
-   social score using each of the four algorithms available in the `cs1302.sorting` package.
+   social score **from high to low** using each of the four algorithms available in the `cs1302.sorting` package.
    For this problem, you will need to supply a custom `Comparator<MyFaceUser>` implementation
    (probably using a lambda expression). You may use the standard swapper.
 
