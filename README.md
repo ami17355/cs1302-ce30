@@ -148,7 +148,7 @@ command depends on your present working directory), then please note that contex
       projects to the `<dependencies>` section of your POM.
 
    1. Finally, create the basic skeleton code for a driver class in `MyFaceDriver.java` with the following
-      code snippet in the `main` method (add import statements as needed):
+      code snippet in the `main` method (**add import statements as needed**):
 
 	  ```java
 	  // generate myface users
@@ -169,6 +169,16 @@ command depends on your present working directory), then please note that contex
    both `pom.xml` and `MyFaceDriver.java`.
 
 **CHECKPOINT**
+
+Now it's time for some data analytics! Your employer has tasked you with marketing
+your company's new product to a cross-section of users of the MyFace social network.
+The data analytics approach that you take needs to be fast so that it impresses your
+boss. Luckily, you have a [MyFace API](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-myface/apidocs/index.html)
+and a collection of
+[sorting algorithm implementations](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/apidocs/index.html)
+that support performance metrics for comparisons and swaps.
+
+1. **NEXT GROUP MEMBER:**
 
 **CHECKPOINT**
 
