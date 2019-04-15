@@ -200,7 +200,7 @@ that support performance metrics for comparisons and swaps.
 **CHECKPOINT**
 
 Now for some better analytics! It turns out that hip young people like our product for some reason.
-Your boss want to cash in on that opportunity by having you finding users with a maximal social score
+Your boss wants to cash in on that opportunity by having you find users with a maximal social score
 based on a formula provided by the company's data scientists. Let's do this!
 
 1. **EVERYONE:** Consider a scenario where you need to sort the `users` array by user
