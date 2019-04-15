@@ -227,6 +227,30 @@ Now for some better analytics!
 
 **CHECKPOINT**
 
+Now for some heavy-duty analytics!
+
+1. **EVERYONE:** It turns out that your company stores the elements of the `users` array on
+   multiple servers on a network. This makes swapping elements in the array costly as network
+   lag is involved. Consider a scenario where you need to sort the `users` array by user
+   *social score* (as in the previous checkpoint) using each of the four algorithms available
+   in the `cs1302.sorting` package.
+
+   In your notes, write down which algorithm you think will be able to sort it the
+   fastest according to: i) comparisons; and ii) swaps.
+
+1. **NEXT GROUP MEMBER:** Now, write the code in `main` to sort the `users` array by user
+   social score using each of the four algorithms available in the `cs1302.sorting` package.
+   For this problem, you will need to supply a custom `Comparator<MyFaceUser>` implementation
+   (probably using a lambda expression). You may use the `Swapper<MyFaceUser>` returned by
+   `Swapper.getNetworkSwapper(100)` to simulate random network lag with a maximum delay of
+   `100` milliseconds.
+
+   1. Once your code code compiles and runs, **run it a couple times**. Each time, does your
+      choice of algorithm win or lose? Write it in your notes!
+
+   1. Stage, commit, and push all changes.
+
+1. **EVERYONE:** Pull your changes from the group repository.
 
 **CHECKPOINT**
 
