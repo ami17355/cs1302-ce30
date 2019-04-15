@@ -161,7 +161,7 @@ command depends on your present working directory), then please note that contex
       Swapper<Integer> s = Swapper.getStandardSwapper();
       Integer[] a = new Integer[] { 3, 6, 1, 32, 9, 2 };
       Sort<Integer> sort = new BubbleSort<>(a, 0, a.length - 1, c, s);
-      ort.printStats();
+      sort.printStats();
       sort.printSorted();
       ```
 
