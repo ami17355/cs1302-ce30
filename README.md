@@ -19,11 +19,122 @@ command depends on your present working directory), then please note that contex
 
 ### Getting Started
 
-1. 
+1. **You need to be in a group with at least two people for this exercise.**
+   We reccommend keeping the groups small. Some steps in this exercise need be
+   done by each group member individually.
 
 ## Exercise Steps
 
-1.
+1. Once each group member has completed the **Getting Started steps**, 
+   pick an ordering for the group members (e.g., Group Member 1, Group Member 2, etc.).
+   If a step is being performed by one group member, then everyone is expected
+   to watch, pay attention, and take notes.
+
+1. **GROUP MEMBER 1:** Create a [new, private repository](https://github.com/new) on GitHub with 
+   the following information:
+   
+   | **Field**            | **Value**                                                        |
+   |----------------------|------------------------------------------------------------------|
+   | **Owner**            | _your account_                                                   |
+   | **Repository Name**  | `cs1302-ce30-ce31`                                                    |
+   | **Description**      | `Repository for Class Exercise 30 and 31`                               |
+   | **Public / Private** | Private -- You choose who can see and commit to this repository. |
+   
+   Do **NOT** "Initialize this repository with a README". 
+   Also, do **NOT** click on the dropdowns for a `.gitignore` or license file.
+   
+   Once complete, you should have a GitHub-hosted private Git repository at the following
+   website URL: `https://github.com/your_username/cs1302-ce30-ce31` where `your_username` is
+   your GitHub account username. 
+   
+   Do **NOT** follow any of the setup instructions at this time.
+   
+1. **GROUP MEMBER 1:** On the repository's website, add your group members as collaborators
+   by going to "Settings" → "Collaborators". This will send them an invite that they can
+   accept either via email or by visiting the repository's website on GitHub.
+   
+1. **OTHER GROUP MEMBERS:** Go to the repository website on GitHub and accept the invition
+   from Group Member 1. If you see a 404 error instead of an invitation, then double check
+   the following:
+   
+   * Repository Website URL
+   
+   * Username that Group Member 1 used when they added you
+   
+   Before continuing, make sure each group member has access to the repository website.
+  
+1. **GROUP MEMBER 2:** On Nike, use Maven to create a project directory for this exercise 
+   called `cs1302-ce30-ce31` with a primary package called `cs1302.analytics`, then change
+   into that directory and do the following:
+   
+   1. Delete the Maven-generated driver and the unit test files:
+   
+      ```
+      $ rm -f src/main/java/cs1302/analytics/App.java
+      $ rm -rf src/test
+      ```
+   
+   1. Initialize a new local Git repository:
+      
+      ```
+      $ git init
+      ```
+      
+   1. Create a [`.gitignore`](https://git-scm.com/docs/gitignore) (hidden file) with the following contents:
+   
+      ```
+      bin/
+      doc/
+      target/
+      *.class
+      hs_err_pid*
+      *~
+      \#*\#
+      core.*
+      ```
+      
+      Add and commit the `.gitignore` file to the local repository.
+      
+   1. Update the POM so that the project works with Java 8. After that, add and commit the `pom.xml` file to 
+      the local repository.
+      
+   1. Create blank source code files for the remaining checkpoints:
+   
+      ```
+      $ touch src/main/java/cs1302/analytics/MyFaceDriver.java
+      ```
+
+      Add and commit `src` to the local repository.
+
+   1. Before proceeding, ensure that all tracked files are committed. 
+
+   1. Visit the repository website on GitHub and copy the "SSH" URL (i.e., the `git@github...` URL)
+      under "Quick setup", then follow these instructions on Nike to link your local repository 
+      to the one on GitHub:
+      
+      ```
+      $ git remote add origin git@github.com:group_member_one/cs1302-ce30-ce31.git
+      $ git push -u origin master
+      ```
+      
+      If successful, everyone should now be able to see the exercise files on the
+      repository website on GitHub!
+
+1. **OTHER GROUP MEMBERS:** Visit the repository website on GitHub and copy the "SSH"
+   URL from the green "Clone or download" button, then these instructions on Nike to 
+   clone the GitHub-hosted Git repostory on your Nike account:
+   
+   ```
+   $ git clone git@github.com:group_member_one/cs1302-ce30-ce31.git
+   ```
+   
+   Change into the directory and confirm that everything is there! You can verify that
+   the origin of the `clone` operation is the repository instance on GitHub by
+   using the following command:
+   
+   ```
+   $ git remote -v
+   ```
 
 **CHECKPOINT**
       
