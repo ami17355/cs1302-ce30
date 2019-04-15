@@ -172,6 +172,12 @@ command depends on your present working directory), then please note that contex
 
 <hr/>
 
+1. Modify your social network so that it only contains 100 users.
+1. Sort the users by age.  Print the ages of the users before and after bubble sorting. Use the `getSorted` method
+to get the sorted users.  The call to bubble sort does not modify the array that is passed in. This is done so that
+you can use the same array on calls to each sorting algorithm.
+1. Time is reported in nanoseconds (1s = 10^9 ns).  We will focus on operation counts - not times.
+
 Now it's time for some data analytics! Your employer has tasked you with marketing
 your company's new product to a cross-section of users of the MyFace social network.
 The data analytics approach that you take needs to be fast so that it impresses your
