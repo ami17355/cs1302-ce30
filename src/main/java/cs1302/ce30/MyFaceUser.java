@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /**
  * A class representing a MyFace User. Each MyFace user has an associated 
- * name, status, message list, and a list of friends.
+ * name, age, status, message list, and a list of friends.
  */
 public class MyFaceUser {
 
@@ -20,17 +20,19 @@ public class MyFaceUser {
     /**
      * Constructs an {@code MyFaceUser} object.
      *
-     * @param name the name of the employee.
+     * @param name the name of the employee
+     * @param age the age of the user
      * @param status the current status of the user
      * @param friends a list containing the names of this user's friends
      * @param messages a list containing the messages in this user's inbox
      * @throws NullPointerException if {@code deductions} is null.
      */
-    public MyFaceUser(String name, String status, List<String> friends, List<Message> messages) {
+    public MyFaceUser(String name, int age, String status,
+                      List<String> friends, List<Message> messages) {
+
         Utility.nullCheck("MyFaceUser Constructor", name, status, friends, messages);
 
-        //Random age between 18 and 97
-        this.age = (int) (Math.random() * 80) + 18;
+        this.age = age;
         this.name = name;
         this.status = status;
         this.friends = friends;
@@ -109,6 +111,6 @@ public class MyFaceUser {
             System.out.println("From: " + m.getSender());
             System.out.println(m.getContents());
         } // for
-    }
+    } // printMessages
     
 } // MyFaceUser

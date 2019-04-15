@@ -127,32 +127,4 @@ public class Utility {
         } // for
     } // checkEmpty
 
-    /**
-     * Throws an IllegalArgumentException if any {@code Strings}
-     * in the varargs parameter, {@code s} do not contain a 
-     * valid email address. This method considers an email address
-     * valid if it contains the {@code @} symbol and a {@code .}
-     * somewhere after the {@code @}. This method for checking
-     * validity would not hold up in a real-world system. For more
-     * information on accurately checking email validity, see 
-     * the link below.
-     * The method performs no actions if all values in {@code s} 
-     * contain valid email addresses.
-     *
-     * @param method the name of the calling method.
-     * @param s varargs parameter containing all strings to verify
-     * @throws IllegalArgumentException if any element of parameter 
-     * {@code s} contains an invalid address.
-     * @see https://www.regular-expressions.info/email.html
-     */
-    public static void checkAddress(String method, String ... s) {
-        for(String str: s) {
-            int index = str.indexOf("@");
-            if((index == -1) || !(str.substring(index).contains("."))) {
-                throw new IllegalArgumentException(method +
-                                                   ": Invalid Email Address");
-            } // if
-        } // for
-    } // checkAddress
-
 } // Utility
