@@ -173,16 +173,57 @@ command depends on your present working directory), then please note that contex
 Now it's time for some data analytics! Your employer has tasked you with marketing
 your company's new product to a cross-section of users of the MyFace social network.
 The data analytics approach that you take needs to be fast so that it impresses your
-boss. Luckily, you have a 
+boss. Luckily, you have a
 [MyFace API](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-myface/apidocs/index.html)
 and a collection of
 [sorting algorithm implementations](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/apidocs/index.html)
 that support performance metrics for comparisons and swaps.
 
-1. **NEXT GROUP MEMBER:** 
+1. **EVERYONE:** Consider a scenario where you need to sort the `users` array by user age using
+   each of the four algorithms available in the `cs1302.sorting` package. In your notes,
+   write down which algorithm you think will be able to sort it the fastest according to:
+   i) comparisons; and ii) swaps.
+
+1. **NEXT GROUP MEMBER:** Now, write the code in `main` to sort the `users` array by user age
+   using each of the four algorithms available in the `cs1302.sorting` package. For this problem,
+   you will need to supply a custom `Comparator<MyFaceUser>` implementation (probably using a
+   lambda expression). You may use the standard swapper. You can ommit the call to `printSorted`
+   (too many users), however, you will probably want to include a call to `printStats`.
+
+   1. Once your code code compiles and runs, **run it a couple times**. Each time, does your
+      choice of algorithm win or lose? Write it in your notes!
+
+   1. Stage, commit, and push all changes.
+
+1. **EVERYONE:** Pull your changes from the group repository.
 
 **CHECKPOINT**
 
+Now for some better analytics!
+
+1. **EVERYONE:** Consider a scenario where you need to sort the `users` array by user
+   *social score* using each of the four algorithms available in the `cs1302.sorting` package.
+   A user's social score is defined as their friends count times the number of characters
+   in their name (including spaces) divided by their age. Here is some pseudocode:
+
+   ```
+   score(user) = count(user.friends) * lenth(user.name) / user.age
+   ```
+
+   In your notes, write down which algorithm you think will be able to sort it the
+   fastest according to: i) comparisons; and ii) swaps.
+
+1. **NEXT GROUP MEMBER:** Now, write the code in `main` to sort the `users` array by user
+   social score using each of the four algorithms available in the `cs1302.sorting` package.
+   For this problem, you will need to supply a custom `Comparator<MyFaceUser>` implementation
+   (probably using a lambda expression). You may use the standard swapper.
+
+   1. Once your code code compiles and runs, **run it a couple times**. Each time, does your
+      choice of algorithm win or lose? Write it in your notes!
+
+   1. Stage, commit, and push all changes.
+
+1. **EVERYONE:** Pull your changes from the group repository.
 
 **CHECKPOINT**
 
