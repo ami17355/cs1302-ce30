@@ -173,12 +173,13 @@ command depends on your present working directory), then please note that contex
 Now it's time for some data analytics! Your employer has tasked you with marketing
 your company's new product to a cross-section of users of the MyFace social network.
 The data analytics approach that you take needs to be fast so that it impresses your
-boss. Luckily, you have a [MyFace API](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-myface/apidocs/index.html)
+boss. Luckily, you have a 
+[MyFace API](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-myface/apidocs/index.html)
 and a collection of
 [sorting algorithm implementations](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/apidocs/index.html)
 that support performance metrics for comparisons and swaps.
 
-1. **NEXT GROUP MEMBER:**
+1. **NEXT GROUP MEMBER:** 
 
 **CHECKPOINT**
 
