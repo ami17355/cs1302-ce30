@@ -36,8 +36,8 @@ command depends on your present working directory), then please note that contex
    | **Field**            | **Value**                                                        |
    |----------------------|------------------------------------------------------------------|
    | **Owner**            | _your account_                                                   |
-   | **Repository Name**  | `cs1302-ce30-ce31`                                                    |
-   | **Description**      | `Repository for Class Exercise 30 and 31`                               |
+   | **Repository Name**  | `cs1302-ce30-ce31`                                               |
+   | **Description**      | `Repository for Class Exercise 30 and 31`                        |
    | **Public / Private** | Private -- You choose who can see and commit to this repository. |
 
    Do **NOT** "Initialize this repository with a README".
@@ -179,7 +179,17 @@ boss. Luckily, you have a
 [MyFace API](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-myface/apidocs/index.html)
 and a collection of
 [sorting algorithm implementations](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/apidocs/index.html)
-that support performance metrics for comparisons and swaps.
+that support performance metrics for comparisons and swaps. You may want to refer to the table below to help make
+your decision.
+
+
+   | **Algorithm**      | **Average-Case Comparisons** | **Worst-Case Comparisons** | **Swaps** | **Stable** |
+   |--------------------|------------------------------|----------------------------|-----------|------------|
+   | **Selection Sort** | `O(n^2)`                     | `O(n^2)`                   | `O(n)`    | No         |
+   | **Bubble Sort**    | `O(n^2)`                     | `O(n^2)`                   | `O(n^2)`  | Yes        |
+   | **Insertion Sort** | `O(n^2)`                     | `O(n^2)`                   | `O(n^2)`  | Yes        |
+   | **QuickSort**      | `O(n*log(n))`                | `O(n^2)`                   | `O(n^2)`  | No         |
+
 
 1. **EVERYONE:** Consider a scenario where you need to sort the `users` array by user age using
    each of the four algorithms available in the `cs1302.sorting` package. In your notes,
