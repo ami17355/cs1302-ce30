@@ -143,8 +143,8 @@ command depends on your present working directory), then please note that contex
       to the `<repositories>` section of your POM.
 
    1. Next, add the dependency info for the
-      [`cs1302-sorting`](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/) and
-      [`cs1302-myface`](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-myface/)
+      [`cs1302-sorting`](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/project-info.html) and
+      [`cs1302-myface`](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-myface/project-info.html)
       projects to the `<dependencies>` section of your POM.
 
    1. Finally, create the basic skeleton code for a driver class in `MyFaceDriver.java` with the following
