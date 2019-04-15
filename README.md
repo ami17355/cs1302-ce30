@@ -63,7 +63,7 @@ command depends on your present working directory), then please note that contex
    
    Before continuing, make sure each group member has access to the repository website.
   
-1. **GROUP MEMBER 2:** On Nike, use Maven to create a project directory for this exercise 
+1. **NEXT GROUP MEMBER:** On Nike, use Maven to create a project directory for this exercise 
    called `cs1302-ce30-ce31` with a primary package called `cs1302.analytics`, then change
    into that directory and do the following:
    
@@ -120,9 +120,10 @@ command depends on your present working directory), then please note that contex
       If successful, everyone should now be able to see the exercise files on the
       repository website on GitHub!
 
-1. **OTHER GROUP MEMBERS:** Visit the repository website on GitHub and copy the "SSH"
-   URL from the green "Clone or download" button, then these instructions on Nike to 
-   clone the GitHub-hosted Git repostory on your Nike account:
+1. **ALL GROUP MEMBERS:** If you are not the group member who just pushed, then visit the 
+   repository website on GitHub and copy the "SSH" URL from the green "Clone or download" 
+   button. Then, follow these instructions on Nike to clone the GitHub-hosted Git repostory 
+   onto your Nike account:
    
    ```
    $ git clone git@github.com:group_member_one/cs1302-ce30-ce31.git
@@ -135,6 +136,14 @@ command depends on your present working directory), then please note that contex
    ```
    $ git remote -v
    ```
+
+1. **NEXT GROUP MEMBER:** On Nike, add the add the 
+   [CSCI 1302 Maven Repository](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-repo/)
+   to the `<repositories>` section of your POM, then add the dependency info for the 
+   [`cs1302-sorting`](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/dependency-info.html) and 
+   [`cs1302-myface`](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-myface/dependency-info.html)
+   projects to the `<dependencies>` section of your POM.
+   
 
 **CHECKPOINT**
       
