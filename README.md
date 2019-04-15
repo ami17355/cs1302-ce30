@@ -154,11 +154,11 @@ command depends on your present working directory), then please note that contex
 	  // generate myface users
 	  MyFace socialNetwork = new MyFace();
 	  MyFaceUser[] users = socialNetwork.getUsers().toArray(MyFaceUser[]::new);
-      System.out.printf("MyFace user count: %d\n", users.length);
+          System.out.printf("MyFace user count: %d\n", users.length);
 
 	  // setup sorting algorithm
 	  Comparator<Integer> c = Integer::compareTo;
-      Swapper<Integer> s = Swapper.getStandardSwapper();
+          Swapper<Integer> s = Swapper.getStandardSwapper();
 	  Integer[] a = new Integer[] { 3, 6, 1, 32, 9, 2 };
 	  Sort<Integer> sort = new BubbleSort<>(a, 0, a.length - 1, c, s);
 	  sort.printStats();
@@ -169,6 +169,8 @@ command depends on your present working directory), then please note that contex
    both `pom.xml` and `MyFaceDriver.java`.
 
 **CHECKPOINT**
+
+<hr/>
 
 Now it's time for some data analytics! Your employer has tasked you with marketing
 your company's new product to a cross-section of users of the MyFace social network.
@@ -199,6 +201,8 @@ that support performance metrics for comparisons and swaps.
 
 **CHECKPOINT**
 
+<hr/>
+
 Now for some better analytics! It turns out that hip young people like our product for some reason.
 Your boss wants to cash in on that opportunity by having you find users with a maximal social score
 based on a formula provided by the company's data scientists. Let's do this!
@@ -228,6 +232,8 @@ based on a formula provided by the company's data scientists. Let's do this!
 1. **EVERYONE:** Pull your changes from the group repository.
 
 **CHECKPOINT**
+
+<hr/>
 
 Now for some heavy-duty analytics!
 
