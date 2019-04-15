@@ -199,7 +199,7 @@ your decision.
 1. **NEXT GROUP MEMBER:** Now, write the code in `main` to sort the `users` array by user age
    using each of the four algorithms available in the `cs1302.sorting` package. For this problem,
    you will need to supply a custom `Comparator<MyFaceUser>` implementation (probably using a
-   lambda expression). You may use the standard swapper. You can ommit the call to `printSorted`
+   lambda expression). You may use the standard swapper. You can omit the call to `printSorted`
    (too many users), however, you will probably want to include a call to `printStats`.
 
    1. Once your code code compiles and runs, **run it a couple times**. Each time, does your
