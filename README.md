@@ -165,8 +165,8 @@ command depends on your present working directory), then please note that contex
 	  sort.printSorted();
 	  ```
 
-  Make sure that everything compiles and runs with Maven, then add and commit
-  both `pom.xml` and `MyFaceDriver.java`.
+   Make sure that everything compiles and runs with Maven, then add and commit
+   both `pom.xml` and `MyFaceDriver.java`.
 
 **CHECKPOINT**
 
