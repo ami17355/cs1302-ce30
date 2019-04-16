@@ -181,40 +181,47 @@ and a collection of
 [sorting algorithm implementations](http://cobweb.cs.uga.edu/~mec/cs1302-mvn-site/cs1302-sorting/apidocs/index.html)
 that support performance metrics for comparisons and swaps.
 
-**NEXT GROUP MEMBER:** On Nike, do the following:
+**NEXT GROUP MEMBER (DRIVER CHANGE):** On Nike, do the following:
 
 1. Before we get into heavy analytics, lets make sure we can make proper use of our sorting algorithms. Start off
    by changing the number of users in your social network to 25. This will make it easy to verify that our algorithms
    are properly sorting.
 
-1. Created a reference variable named `c` of type `Comparator<MyFaceUser>`. Assign a proper lambda expression so
-   that `c` can be used to compare two `MyFaceUser` objects by age.
+1. Modify the reference variable named `c` to be of type `Comparator<MyFaceUser>`. Assign a proper lambda expression 
+   so that `c` can be used to compare two `MyFaceUser` objects by age.
 
-1. Modify variable `s` in your code to be of type `Swapper<MyFaceUser>`.
+1. Modify variable `s` in your code to be of type `Swapper<MyFaceUser>`. You can leave it as a standard swapper.
 
-1. Create a new `BubbleSort<MyFaceUser>` object and assign it to a reference variable of type `Sort<MyFaceUser>` 
-   named `sort`.
+1. Modify the call to `BubbleSort` so that it sorts MyFace users by age and stores the result in variable `sort`.
 
-1. Call the `printStats` method on `sort` to print the summary statistics.
+1. You can remove the call to `printSorted` but leave the `printStats` call.
 
-1. **Note** the array that you pass in to the constructor for a particular sorting algorithm does not get modified.
-   Instead, the sorted array is stored as an instance variable of the `sort` object (this is done so that you can 
-   use the same, unsorted, array on calls to each sorting algorithm). You can access the sorted array
-   using the `getSorted` method on `sort`. Use this method to obtain a reference to the sorted users and then add
-   code to print the ages of all of the sorted users.
+1. **Note** the array that you pass in to the constructor for a particular sorting algorithm (in this case `users`)
+   does not get modified. Instead, the sorted array is stored as an instance variable of the `sort` object 
+   (this is done so that you can use the same, unsorted, array on calls to each sorting algorithm). You can 
+   access the sorted array using the `getSorted` method on `sort`. Use this method to obtain a reference to 
+   the sorted users and then add code to print the ages of all of the sorted users.
 
 1. Compile and run your program. You should see the ages printed in sorted order along with some summary statistics
    on the bubble sort algorithm.
-   **Note** the summary statistics show comparison stats and swap stats for the algorithm. They include a count 
-   (number of times that operation occurred), total amount of time spent on each operation, and the min, max, and
-   average times of the calls.  Times are reported in nanoseconds (1s = 10^9 ns). For the most part, we will focus 
-   on operation counts - not runtimes. However, you may find those interesting as well.
+   
+   **Note** the summary statistics show statistics for the comparison and swap operations for the algorithm used.
+   Times are reported in nanoseconds (`1s = 10^9 ns`). The statistics include:
+   
+     * A count representing the number of times a particular operation occurred.
+     * Total amount of time spent on each operation.
+     * The minimum time that a single operation took across all calls to a particular operation.
+     * The maximum time that a single operation took across all calls to a particular operation.
+     * The average time for all calls to a particular operation.and the min, max, and
+   
+   For the most part, we will focus on operation counts - not runtimes. However, you may find the actual
+   runtimes to be interesting as well.
 
 1. Make sure that everything compiles and runs with Maven, then add and commit `MyFaceDriver.java`.
    
-1. **EVERYONE:** Consider a scenario where you need to sort the `users` array by user age using
-   each of the four algorithms available in the `cs1302.sorting` package. In your notes,
-   write down which algorithm you think will be able to sort it the fastest according to:
+1. **EVERYONE:** Consider sorting the `users` array by user age using each of the four algorithms 
+   available in the `cs1302.sorting` package. In your notes, write down which algorithm you think 
+   will be able to sort it the fastest according to:
    i) comparisons; and ii) swaps.
 
    You may want to refer to the table below to help make your decision.
@@ -226,12 +233,11 @@ that support performance metrics for comparisons and swaps.
    | **Insertion Sort** | `O(n^2)`                     | `O(n^2)`                   | `O(n^2)`  | Yes        |
    | **QuickSort**      | `O(n*log(n))`                | `O(n^2)`                   | `O(n^2)`  | No         |
 
-1. **NEXT GROUP MEMBER:** Increase the size of your social network to **10000**. 
+1. **NEXT GROUP MEMBER (DRIVER CHANGE):** Increase the size of your social network to **10000**. 
    Now, write the code in `main` to sort the `users` array by user age
    using each of the four algorithms available in the `cs1302.sorting` package. For this problem,
-   you will need use your custom `Comparator<MyFaceUser>` implementation (probably using a
-   lambda expression) along with the standard swapper. You can omit the call to `printSorted`
-   (too many users), however, you will probably want to include a call to `printStats`.
+   you will use your custom `Comparator<MyFaceUser>` created earlier along with the standard swapper. 
+   You will want to include a call to `printStats` after each sorting algorithm is used.
 
    1. Once your code code compiles and runs, **run it a couple times**. Each time, does your
       choice of algorithm win or lose? Write it in your notes!
