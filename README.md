@@ -260,7 +260,7 @@ based on a formula provided by the company's data scientists. Let's do this!
    in their name (including spaces) divided by their age. Here is some pseudocode:
 
    ```
-   score(user) = count(user.friends) * lenth(user.name) / user.age
+   score(user) = count(user.friends) * length(user.name) / user.age
    ```
 
    In your notes, write down which algorithm you think will be able to sort it the
