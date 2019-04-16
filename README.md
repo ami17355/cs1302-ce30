@@ -1,4 +1,4 @@
-# cs1302-ce30 Social Network Analytics
+# cs1302-ce30 Social Network Graph Analytics
 
 In this class exercise, students will explore the use of different sorting algorithms in the
 context of various data analytics problems related to the MyFace social network.
